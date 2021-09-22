@@ -132,20 +132,21 @@ img + p {
     padding-bottom: 15px;
 }
 
-.like-button img {
-    height: 100%;
+.like-button > button {
+    background-image: url("/img/thumbs.png");
+    background-color: #0c508d;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 21px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+    width: 60px;
 }
 
-.like-button img:last-child {
-    display: none;
-}
-
-.like-button:hover img:last-child {
-    display: block;
-}
-
-.like-button:hover img:first-child {
-    display: none;
+.like-button > button:hover {
+    background-color: #07345b;
 }
 
 
