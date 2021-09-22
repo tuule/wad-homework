@@ -109,8 +109,12 @@ main #content {
     height: 100%;
 }
 
-.post-top p {
+img + p {
     font-size: 14px;
+}
+
+.post-top ~ .post-comment p {
+    font-size: 18px;
 }
 
 .post .post-image img {
@@ -120,10 +124,6 @@ main #content {
 
 .post-comment {
     padding: 0 15px 15px 15px;
-}
-
-.post-comment p {
-    font-size: 18px;
 }
 
 .post .like-button {
