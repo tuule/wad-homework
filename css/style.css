@@ -1,7 +1,18 @@
 html, body {
     height: 100vh;
     margin: 0;
-    background-color: #156fb0
+    background-color: #156fb0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+main {
+    margin-top: 70px;
 }
 
 header #navbar {
@@ -99,8 +110,7 @@ main #content {
 }
 
 .post-top p {
-    font-family: Arial, serif;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .post .post-image img {
@@ -109,13 +119,11 @@ main #content {
 }
 
 .post-comment {
-    padding-left: 15px;
-    padding-bottom: 15px;
+    padding: 0 15px 15px 15px;
 }
 
 .post-comment p {
-    font-family: Arial, serif;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .post .like-button {
@@ -126,6 +134,18 @@ main #content {
 
 .like-button img {
     height: 100%;
+}
+
+.like-button img:last-child {
+    display: none;
+}
+
+.like-button:hover img:last-child {
+    display: block;
+}
+
+.like-button:hover img:first-child {
+    display: none;
 }
 
 
