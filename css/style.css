@@ -156,10 +156,11 @@ main #login-box {
     display: flex;
     flex-direction: column;
     text-align: center;
-    height: 500px;
+    height: 440px;
     width: 400px;
     margin: auto;
     background-color: #ffffff;
+    border-radius: 5px;
 }
 
 #login-box .login-header {
@@ -177,5 +178,46 @@ main #login-box {
     padding: 20px;
     font-weight: bold;
 }
+
+.login-header input{
+    height: 30px;
+    width: 100px;
+}
+
+#login-box .login-form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.login-form input{
+    height: 30px;
+    width: 200px;
+    border-radius: 3px;
+}
+
+
+#login-box .login-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    height: 32px;
+    width: 60px;
+    margin: 20px;
+    background-color: #156fb0;
+    border-radius: 5px;
+}
+
+.login-button p{
+    font-size: 15px;
+    align-self: center;
+    color: #ffffff;
+}
+
 
 
