@@ -19,6 +19,7 @@ header #navbar {
     display: flex;
     justify-content: space-between;
     background-color: #ffffff;
+    z-index: 1;
 }
 
 #navbar .header-logo {
@@ -109,7 +110,7 @@ main #content {
     height: 100%;
 }
 
-img + p {
+img + .post-top p {
     font-size: 14px;
 }
 
@@ -147,6 +148,34 @@ img + p {
 
 .like-button > button:hover {
     background-color: #07345b;
+}
+
+/* Login page */
+
+main #login-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 500px;
+    width: 400px;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+#login-box .login-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.login-header img {
+    height: 70px;
+}
+
+.login-header p {
+    font-size: 22px;
+    padding: 20px;
+    font-weight: bold;
 }
 
 
