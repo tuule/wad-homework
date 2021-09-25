@@ -134,7 +134,7 @@ img + .post-top p {
 }
 
 .like-button > button {
-    background-image: url("/img/thumbs.png");
+    background-image: url("../img/thumbs.png");
     background-color: #0c508d;
     background-repeat: no-repeat;
     background-position: center;
