@@ -179,7 +179,7 @@ main #login-box {
     font-weight: bold;
 }
 
-#login-box input, button {
+#login-box input, #login-box button {
     padding: 5px;
     margin: 5px;
     height: 20px;
