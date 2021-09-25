@@ -12,8 +12,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <main>
+
         <!-- Beginning of login box -->
         <section id="login-box">
 
@@ -27,36 +29,30 @@
 
             <!-- Text -->
             <div class="login-text">
-                <a href="https://courses.cs.ut.ee/2021/wad/fall/Main/Submit">Create an Account</a>
+                <a href="login.html">Create an Account</a>
                 <p>Or</p>
                 <h3>Please Log In</h3>
             </div>
 
             <!-- Form -->
             <div class="login-form">
-
-                <input type="text" placeholder="Email" name="email" form="login" required >
-                <br>
-                <input type="password" placeholder="Password" name="pword" form="login" required>
-
+                <form action="index.html" method="post">
+                    <input type="text" placeholder="Email" name="email" required="required">
+                    <br>
+                    <input type="password" placeholder="Password" name="password" required="required">
+                    <br>
+                    <button type="submit" value="Log In">Log In</button>
+                </form>
             </div>
-                
 
-
-            <button class= "login-button" type="submit" value="Log In" form="login"> <p>Log In</p> </button>
-
-            
             <!-- More text -->
-            <div class="login-text">
-                <a href="https://courses.cs.ut.ee/2021/wad/fall/Main/Submit">Forgot password?</a>
+            <div class="login-text-2">
+                <a href="login.html">Forgot password?</a>
             </div>
 
         </section>
         <!-- End of login box -->
 
     </main>
-
-
-
 </body>
 </html>
