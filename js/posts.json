@@ -1,0 +1,61 @@
+[{
+  "author_avatar_url": "https://kodu.ut.ee/~a71486/user-1.png",
+  "post_date": "2021-10-17T14:41:22Z",
+  "post_image_url": "https://kodu.ut.ee/~a71486/sample1.jpg",
+  "post_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "author_avatar_url": "https://kodu.ut.ee/~a71486/user-2.png",
+    "post_date": "2021-10-14T16:36:28Z",
+    "post_image_url": "",
+    "post_text": "Nullam eget felis eget nunc lobortis mattis."
+  },
+  {
+    "author_avatar_url": "https://kodu.ut.ee/~a71486/user-3.png",
+    "post_date": "2021-10-11T11:26:11Z",
+    "post_image_url": "https://kodu.ut.ee/~a71486/sample2.jpg",
+    "post_text": "Quam nulla porttitor massa id neque aliquam vestibulum morbi blandit."
+  },
+  {
+    "author_avatar_url": "https://kodu.ut.ee/~a71486/user-2.png",
+    "post_date": "2021-10-05T17:14:14Z",
+    "post_image_url": "https://kodu.ut.ee/~a71486/sample3.jpg",
+    "post_text": "Odio morbi quis commodo odio aenean sed."
+  },
+  {
+    "author_avatar_url": "https://kodu.ut.ee/~a71486/user-1.png",
+    "post_date": "2021-10-03T19:21:30Z",
+    "post_image_url": "",
+    "post_text": "Facilisis mauris sit amet massa vitae."
+  },
+  {
+    "author_avatar_url": "https://kodu.ut.ee/~a71486/user-3.png",
+    "post_date": "2021-10-01T09:14:43Z",
+    "post_image_url": "https://kodu.ut.ee/~a71486/sample4.jpg",
+    "post_text": "Viverra accumsan in nisl nisi scelerisque eu."
+  },
+  {
+    "author_avatar_url": "https://kodu.ut.ee/~a71486/user-3.png",
+    "post_date": "2021-09-28T15:34:37Z",
+    "post_image_url": "",
+    "post_text": "Morbi non arcu risus quis varius quam."
+  },
+  {
+    "author_avatar_url": "https://kodu.ut.ee/~a71486/user-2.png",
+    "post_date": "2021-09-24T10:17:09Z",
+    "post_image_url": "",
+    "post_text": "Purus faucibus ornare suspendisse sed."
+  },
+  {
+    "author_avatar_url": "https://kodu.ut.ee/~a71486/user-1.png",
+    "post_date": "2021-09-19T16:42:10Z",
+    "post_image_url": "https://kodu.ut.ee/~a71486/sample5.jpg",
+    "post_text": "Tristique senectus et netus et malesuada fames ac turpis egestas."
+  },
+  {
+    "author_avatar_url": "https://kodu.ut.ee/~a71486/user-3.png",
+    "post_date": "2021-09-17T09:12:03Z",
+    "post_image_url": "https://kodu.ut.ee/~a71486/sample6.jpg",
+    "post_text": "Morbi non arcu risus quis varius."
+  }
+]
