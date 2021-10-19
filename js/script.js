@@ -21,23 +21,12 @@ $(function () {
     });
 });
 
-// jQuery function for like button
-$(function() {
-    var button = $('.like-button > button')
-    button.click(function() {
-        var btn = $(this);
-        if (btn.hasClass('active')) {
-            btn.removeClass('active');
-        } else {
-            btn.addClass('active');
-        }
-        console.log("Button was clicked")
-    });
-});
+
 
 // jQuery code that can retrieve/fetch the posts information from the endpoint (URI)
 $(document).ready(function (){
     var api = 'http://myjson.dit.upm.es/api/bins/1ijb';
+    //var local = 'js/posts.json'
     $.getJSON(api, function (data) {
         //console.log(data)
         var $newPost;
@@ -102,6 +91,21 @@ $(document).ready(function (){
                 $('#content-flow').append($newPost);
             }
         });
+
+        // jQuery function for like button
+        $(function() {
+            var button = $('.like-button > button')
+            button.click(function() {
+                var btn = $(this);
+                if (btn.hasClass('active')) {
+                    btn.removeClass('active');
+                } else {
+                    btn.addClass('active');
+                }
+                console.log("Button was clicked")
+            });
+        });
+
     });
 });
 
