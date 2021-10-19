@@ -145,11 +145,11 @@ main #content {
     background-color: #ffffff;
 }
 
-#content .content-flow {
+#content #content-flow {
     padding: 40px 0 20px 0;
 }
 
-.content-flow .post {
+#content-flow .post {
     width: 90%;
     display: flex;
     flex-direction: column;
