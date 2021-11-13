@@ -1,15 +1,22 @@
 <template>
   <body>
 
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+  <NavBar />
   <router-view />
 
   </body>
 
 </template>
+
+<script>
+import NavBar from "./components/NavBar"
+export default {
+  name: "App",
+  components: {
+    NavBar
+  }
+}
+</script>
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
