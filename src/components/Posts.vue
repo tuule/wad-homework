@@ -5,6 +5,7 @@
       <PostItem :post="post1" />
       <PostItem :post="post2" />
       <PostItem :post="post3" />
+      <reset-button />
     </div>
   </section>
 
@@ -12,10 +13,12 @@
 
 <script>
 import PostItem from "./PostItem";
+import ResetButton from "./ResetButton"
 export default {
   name: "Posts",
   components: {
-    PostItem
+    PostItem,
+    ResetButton
   },
   data() {
     return {

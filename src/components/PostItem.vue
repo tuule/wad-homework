@@ -11,17 +11,19 @@
     <div class="post-comment" v-if="post.post_text !== null">
       <p>{{post.post_text}}</p>
     </div>
-    <div class="like-button">
-      <button type="button" name="thumbs-up"></button>
-    </div>
+    <like-button />
   </div>
   <!-- end of a single post -->
 </template>
 
 <script>
+import LikeButton from "./LikeButton"
 export default {
   name: "PostItem",
-  props: ["post"]
+  props: ["post"],
+  components: {
+    LikeButton
+  },
 }
 </script>
 
@@ -64,24 +66,4 @@ img + .post-top p {
 .post-comment {
   padding: 0 15px 15px 15px;
 }
-
-.post .like-button {
-  height: 40px;
-  padding-left: 15px;
-  padding-bottom: 15px;
-}
-
-.like-button > button {
-  background-image: url("../assets/like-btn.png");
-  background-color: #adb5bd;
-  background-repeat: no-repeat;
-  background-position: 8px 7px;
-  background-size: 25px;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  height: 40px;
-  width: 40px;
-}
-
 </style>
