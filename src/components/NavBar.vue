@@ -38,7 +38,7 @@ header {
     padding: 15px;
     display: flex;
     flex-direction: row;
-    background-color: #ffffff;
+    background-color: #ece6e6;
     z-index: 1;
 
     .header-logo {
