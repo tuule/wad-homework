@@ -1,6 +1,6 @@
 <template>
   <!-- beginning of a single post -->
-  <div class="post">
+  <div class="post" v-for="post in postData" :key="post.post_date">
     <div class="post-top">
       <img :src=post.author_avatar_url alt="avatar">
       <p>{{post.post_date}}</p>
@@ -18,12 +18,17 @@
 
 <script>
 import LikeButton from "./LikeButton"
+
 export default {
   name: "PostItem",
-  props: ["post"],
   components: {
     LikeButton
   },
+  computed: {
+    postData() {
+      return this.$store.state.postData;
+    }
+  }
 }
 </script>
 
