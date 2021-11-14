@@ -22,5 +22,10 @@ export default createStore({
       post_text: null
       }
     ]
+  },
+  getters: {
+    getPostData(state) {
+      return state.postData;
+    }
   }
 });

@@ -26,7 +26,7 @@ export default {
   },
   computed: {
     postData() {
-      return this.$store.state.postData;
+      return this.$store.getters.getPostData;
     }
   }
 }
