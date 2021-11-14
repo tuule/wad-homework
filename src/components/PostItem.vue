@@ -1,6 +1,6 @@
 <template>
   <!-- beginning of a single post -->
-  <div class="post" v-for="post in postData" :key="post.post_date">
+  <div class="post" v-for="post in postData" :key="post.post_id">
     <div class="post-top">
       <img :src=post.author_avatar_url alt="avatar">
       <p>{{post.post_date}}</p>
