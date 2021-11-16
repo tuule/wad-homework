@@ -55,7 +55,7 @@ header {
       list-style: none;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-end;
       flex-grow: 2;
       margin: 0;
       padding: 0;
@@ -73,7 +73,7 @@ header {
       color: #0c508d;
       text-decoration: none;
       background: transparent;
-      border: 1px solid transparent;
+      border: 1px solid #3597ef;
       border-radius: 16px;
       cursor: pointer;
       padding: 8px 24px;
