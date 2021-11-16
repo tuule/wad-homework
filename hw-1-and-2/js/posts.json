@@ -4,69 +4,79 @@
     "author_avatar_url": "https://kodu.ut.ee/~a71486/user-1.png",
     "post_date": "2021-10-17T14:41:22Z",
     "post_image_url": "https://kodu.ut.ee/~a71486/sample1.jpg",
-    "post_text": "The Mountains are quite the grandest and most spectacular mountains I have ever seen. When viewed over the vast expanse of sagebrush which covers the valley, or with the river and the marshes in the foreground, they present a picture of ever-changing beauty which is beyond to compare."
+    "post_text": "The Mountains are quite the grandest and most spectacular mountains I have ever seen. When viewed over the vast expanse of sagebrush which covers the valley, or with the river and the marshes in the foreground, they present a picture of ever-changing beauty which is beyond to compare.",
+    "number_of_likes": 74
   },
   {
     "post_id": 2,
     "author_avatar_url": "https://kodu.ut.ee/~a71486/user-2.png",
     "post_date": "2021-10-14T16:36:28Z",
     "post_image_url": null,
-    "post_text": "Wikipedia and Google answer questions with more questions, opening up pages of information you never asked for. But a dictionary builds on common knowledge, using simple words to explain more complex ones."
+    "post_text": "Wikipedia and Google answer questions with more questions, opening up pages of information you never asked for. But a dictionary builds on common knowledge, using simple words to explain more complex ones.",
+    "number_of_likes": 19
   },
   {
     "post_id": 3,
     "author_avatar_url": "https://kodu.ut.ee/~a71486/user-3.png",
     "post_date": "2021-10-11T11:26:11Z",
     "post_image_url": "https://kodu.ut.ee/~a71486/sample2.jpg",
-    "post_text": "From the valleys below, enormous walls of gray stone rise above dense deciduous forests. As you climb higher, the forests flatten into expanses of montane grasslands."
+    "post_text": "From the valleys below, enormous walls of gray stone rise above dense deciduous forests. As you climb higher, the forests flatten into expanses of montane grasslands.",
+    "number_of_likes": 35
   },
   {
     "post_id": 4,
     "author_avatar_url": "https://kodu.ut.ee/~a71486/user-2.png",
     "post_date": "2021-10-05T17:14:14Z",
     "post_image_url": "https://kodu.ut.ee/~a71486/sample3.jpg",
-    "post_text": null
+    "post_text": null,
+    "number_of_likes": 71
   },
   {
     "post_id": 5,
     "author_avatar_url": "https://kodu.ut.ee/~a71486/user-1.png",
     "post_date": "2021-10-03T19:21:30Z",
     "post_image_url": null,
-    "post_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam eget felis eget nunc lobortis mattis. Quam nulla porttitor massa id neque aliquam vestibulum morbi blandit."
+    "post_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam eget felis eget nunc lobortis mattis. Quam nulla porttitor massa id neque aliquam vestibulum morbi blandit.",
+    "number_of_likes": 13
   },
   {
     "post_id": 6,
     "author_avatar_url": "https://kodu.ut.ee/~a71486/user-3.png",
     "post_date": "2021-10-01T09:14:43Z",
     "post_image_url": "https://kodu.ut.ee/~a71486/sample4.jpg",
-    "post_text": "Facilisis mauris sit amet massa vitae. Odio morbi quis commodo odio aenean sed. Viverra accumsan in nisl nisi scelerisque eu."
+    "post_text": "Facilisis mauris sit amet massa vitae. Odio morbi quis commodo odio aenean sed. Viverra accumsan in nisl nisi scelerisque eu.",
+    "number_of_likes": 17
   },
   {
     "post_id": 7,
     "author_avatar_url": "https://kodu.ut.ee/~a71486/user-3.png",
     "post_date": "2021-09-28T15:34:37Z",
     "post_image_url": null,
-    "post_text": "Quam adipiscing vitae proin sagittis. Purus ut faucibus pulvinar elementum integer enim neque. Tellus cras adipiscing enim eu."
+    "post_text": "Quam adipiscing vitae proin sagittis. Purus ut faucibus pulvinar elementum integer enim neque. Tellus cras adipiscing enim eu.",
+    "number_of_likes": 63
   },
   {
     "post_id": 8,
     "author_avatar_url": "https://kodu.ut.ee/~a71486/user-3.png",
     "post_date": "2021-09-17T09:12:03Z",
     "post_image_url": "https://kodu.ut.ee/~a71486/sample6.jpg",
-    "post_text": null
+    "post_text": null,
+    "number_of_likes": 94
   },
   {
     "post_id": 9,
     "author_avatar_url": "https://kodu.ut.ee/~a71486/user-2.png",
     "post_date": "2021-09-24T10:17:09Z",
     "post_image_url": null,
-    "post_text": "Id venenatis a condimentum vitae. Interdum posuere lorem ipsum dolor sit amet consectetur. Senectus et netus et malesuada fames ac turpis egestas maecenas. Volutpat lacus laoreet non curabitur gravida arcu ac tortor."
+    "post_text": "Id venenatis a condimentum vitae. Interdum posuere lorem ipsum dolor sit amet consectetur. Senectus et netus et malesuada fames ac turpis egestas maecenas. Volutpat lacus laoreet non curabitur gravida arcu ac tortor.",
+    "number_of_likes": 23
   },
   {
     "post_id": 10,
     "author_avatar_url": "https://kodu.ut.ee/~a71486/user-1.png",
     "post_date": "2021-09-19T16:42:10Z",
     "post_image_url": "https://kodu.ut.ee/~a71486/sample5.jpg",
-    "post_text": "Tristique senectus et netus et malesuada fames ac turpis egestas."
+    "post_text": "Tristique senectus et netus et malesuada fames ac turpis egestas.",
+    "number_of_likes": 11
   }
 ]

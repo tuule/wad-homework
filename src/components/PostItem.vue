@@ -3,7 +3,7 @@
   <div class="post" v-for="post in postData" :key="post.post_id">
     <div class="post-top">
       <img :src=post.author_avatar_url alt="avatar">
-      <p>{{post.post_date}}</p>
+      <p>{{formatDate(post.post_date)}}</p>
     </div>
     <div class="post-image" v-if="post.post_image_url !== null">
       <img :src=post.post_image_url alt="posted-image">
@@ -11,7 +11,7 @@
     <div class="post-comment" v-if="post.post_text !== null">
       <p>{{post.post_text}}</p>
     </div>
-    <like-button />
+    <like-button :likes="post.number_of_likes" v-on:click="addLike(post)"/>
   </div>
   <!-- end of a single post -->
 </template>
@@ -27,6 +27,17 @@ export default {
   computed: {
     postData() {
       return this.$store.getters.getPostData;
+    }
+  },
+  methods: {
+    formatDate(date) {
+      const newDate = new Date(date).toLocaleString('default', {
+        year: 'numeric', month: 'long', day: 'numeric', hour12: false, hour: '2-digit', minute: '2-digit'
+      });
+      return newDate;
+    },
+    addLike(number) {
+      this.$store.commit("addLike", number);
     }
   }
 }

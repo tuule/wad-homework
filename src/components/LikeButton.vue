@@ -1,23 +1,16 @@
 <template>
   <div class="like-button">
-    <button type="button" name="thumbs-up" @click="addLike"></button>
-    <div class="numberOfLikes">{{numberOfLikes}}</div>
+    <button type="button" name="thumbs-up"></button>
+    <div class="numberOfLikes">{{likes}}</div>
   </div>
 </template>
 
 <script>
 export default {
   name: "LikeButton",
-  data() {
-    return {
-      numberOfLikes: 0
-    };
-  },
-  methods: {
-    addLike() {
-      this.numberOfLikes += 1;
-    }
-  }
+  props: [
+      'likes'
+  ]
 }
 </script>
 
