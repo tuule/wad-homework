@@ -3,7 +3,7 @@
     <!-- beginning of content -->
     <div id="content-flow">
       <PostItem />
-      <reset-button />
+      <reset-button v-on:click="resetLikesAll"/>
     </div>
   </section>
 
@@ -17,6 +17,11 @@ export default {
   components: {
     PostItem,
     ResetButton
+  },
+  methods: {
+    resetLikesAll() {
+      this.$store.commit("resetLikes")
+    }
   }
 }
 </script>

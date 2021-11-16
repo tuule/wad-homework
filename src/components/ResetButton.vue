@@ -26,7 +26,7 @@ export default {
 
 .reset-button > button {
   color: #ffffff;
-  background-color: #adb5bd;
+  background-color: #b1a7a6;
   font-size: 11px;
   border: none;
   border-radius: 16px;

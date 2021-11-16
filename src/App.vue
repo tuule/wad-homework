@@ -2,7 +2,7 @@
   <body>
 
   <NavBar />
-  <router-view />
+  <router-view /> <!-- this is where the selected component will be loaded -->
   <Footer />
   </body>
 
@@ -34,19 +34,5 @@ body {
   height: 100vh;
   margin: 0;
   background-color: #156fb0;
-}
-
-#nav {
-  text-align: center;
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #ffffff;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
 }
 </style>
