@@ -9,9 +9,6 @@ export default createStore({
   getters: {
     getPostData(state) {
       return state.postData;
-    },
-    getPostId(state) {
-      return state.postData.post_id;
     }
   },
   mutations: {

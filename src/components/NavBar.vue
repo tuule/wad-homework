@@ -1,3 +1,4 @@
+<!-- TEMPLATE -->
 <template>
   <!-- beginning of header -->
   <header>
@@ -16,18 +17,19 @@
           <router-link to="/contact">Contact Us</router-link>
         </li>
       </ul>
-
     </section>
   </header>
   <!-- end of header -->
 </template>
 
+<!-- SCRIPT -->
 <script>
 export default {
   name: "NavBar"
 }
 </script>
 
+<!-- STYLE -->
 <style scoped lang="scss">
 header {
   position: fixed;
@@ -92,5 +94,4 @@ header {
     }
   }
 }
-
 </style>

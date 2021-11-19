@@ -1,3 +1,4 @@
+<!-- TEMPLATE -->
 <template>
   <div class="like-button">
     <button type="button" name="thumbs-up"></button>
@@ -5,6 +6,7 @@
   </div>
 </template>
 
+<!-- SCRIPT -->
 <script>
 export default {
   name: "LikeButton",
@@ -14,6 +16,7 @@ export default {
 }
 </script>
 
+<!-- STYLE -->
 <style scoped>
 .like-button {
   display: flex;
@@ -54,5 +57,4 @@ export default {
   width: 30px;
   margin-left: 7px;
 }
-
 </style>

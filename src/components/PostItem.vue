@@ -1,3 +1,4 @@
+<!-- TEMPLATE -->
 <template>
   <!-- beginning of a single post -->
   <div class="post" v-for="post in postData" :key="post.post_id">
@@ -16,6 +17,7 @@
   <!-- end of a single post -->
 </template>
 
+<!-- SCRIPT -->
 <script>
 import LikeButton from "./LikeButton"
 
@@ -36,13 +38,14 @@ export default {
       });
       return newDate;
     },
-    addLike(number) {
-      this.$store.commit("addLike", number);
+    addLike(clickedPost) {
+      this.$store.commit("addLike", clickedPost);
     }
   }
 }
 </script>
 
+<!-- STYLE -->
 <style scoped>
 .post {
   width: 90%;

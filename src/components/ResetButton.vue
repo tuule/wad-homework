@@ -1,15 +1,18 @@
+<!-- TEMPLATE -->
 <template>
   <div class="reset-button">
     <button type="button" name="reset">RESET LIKES</button>
   </div>
 </template>
 
+<!-- SCRIPT -->
 <script>
 export default {
   name: "ResetButton"
 }
 </script>
 
+<!-- STYLE -->
 <style scoped>
 .reset-button {
   display: flex;
@@ -33,7 +36,6 @@ export default {
   cursor: pointer;
   height: 40px;
   width: 110px;
-
 }
 
 .reset-button > button:hover {

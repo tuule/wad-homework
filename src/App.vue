@@ -1,16 +1,15 @@
+<!-- TEMPLATE -->
 <template>
-  <body>
-
-  <NavBar />
-  <router-view /> <!-- this is where the selected component will be loaded -->
-  <Footer />
-  </body>
-
+  <NavBar/>
+  <router-view/> <!-- this is where the selected VIEW will be loaded -->
+  <Footer/>
 </template>
 
+<!-- SCRIPT -->
 <script>
 import NavBar from "./components/NavBar"
 import Footer from "./components/Footer"
+
 export default {
   name: "App",
   components: {
@@ -20,6 +19,7 @@ export default {
 }
 </script>
 
+<!-- STYLE -->
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
@@ -28,11 +28,5 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #000000;
-}
-
-body {
-  height: 100vh;
-  margin: 0;
-  background-color: #156fb0;
 }
 </style>

@@ -1,3 +1,4 @@
+<!-- TEMPLATE -->
 <template>
   <footer>
     <ul>
@@ -7,18 +8,20 @@
       </li>
     </ul>
     <div class="icons">
-      <a href="#"><img src="../assets/icon-news.png" alt="logo" id="first"></a>
-      <a href="#"><img src="../assets/icon-settings.png" alt="logo"></a>
+      <a href="#"><img src="../assets/icon-news.png" alt="news"></a>
+      <a href="#"><img src="../assets/icon-settings.png" alt="settings"></a>
     </div>
   </footer>
 </template>
 
+<!-- SCRIPT -->
 <script>
 export default {
   name: "Footer"
 }
 </script>
 
+<!-- STYLE -->
 <style scoped>
 footer {
   height: 60px;
