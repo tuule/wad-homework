@@ -12,7 +12,7 @@
     <div class="post-comment" v-if="post.post_text !== null">
       <p>{{post.post_text}}</p>
     </div>
-    <like-button :likes="post.number_of_likes" v-on:click="addLike(post)"/>
+    <LikeButton :likes="post.number_of_likes" v-on:click="addLike(post)"/>
   </div>
   <!-- end of a single post -->
 </template>
