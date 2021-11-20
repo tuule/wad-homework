@@ -1,13 +1,19 @@
 import { createStore } from "vuex";
+import axios from "axios";
 
-import localData from "../../hw-1-and-2/js/posts.json"
 
 export default createStore({
   state: {
-    postData: localData,
+    postData: [],
     messages: []
   },
   actions: {
+    getRemoteData({ commit }) {
+      axios.get('http://myjson.dit.upm.es/api/bins/edr7')
+          .then(response => {
+            commit("setRemoteData", response.data)
+          })
+    },
     contactUs(context, message) {
       const newMessage = {
         messageName: message.name,
@@ -24,6 +30,9 @@ export default createStore({
     }
   },
   mutations: {
+    setRemoteData(state, posts) {
+      state.postData = posts;
+    },
     addLike: (state, post) => {
       const thePost = state.postData.find(x => {
         return x.post_id === post.post_id})

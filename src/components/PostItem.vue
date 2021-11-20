@@ -26,6 +26,9 @@ export default {
   components: {
     LikeButton
   },
+  mounted() {
+    this.$store.dispatch("getRemoteData");
+  },
   computed: {
     postData() {
       return this.$store.getters.getPostData;
