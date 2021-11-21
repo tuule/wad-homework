@@ -2,7 +2,7 @@
 <template>
   <div class="aboutUs-start">
     <p>
-      Here lies information about US
+      Here you can find information about us
     </p>
   </div>
   <div class="aboutUs-info">
@@ -15,7 +15,7 @@
   </div>
     <form ref="submitForm" @submit.prevent="submitForm">
       <div class="aboutUs-info" style="width: 50%">
-        <label for="name">The name you wish to inquire additional information about</label>
+        <label for="name">Type in the name you wish to inquire additional information about</label>
         <input type="text" id="name" v-model="name" />
       </div>
     </form>
@@ -94,8 +94,8 @@ data() {
 }
 
 .aboutUs-start p {
-    text-align: center;
-    vertical-align: middle;
+  text-align: center;
+  vertical-align: middle;
   font-size: 60px;
   padding: 5px;
 }
@@ -111,34 +111,35 @@ data() {
 }
 
 .aboutUs-info p {
-    text-align: center;
-    vertical-align: middle;
-  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 24px;
   padding: 10px;
 }
 
 .aboutUs-info label{
-    text-align: center;
-    vertical-align: middle;
+  text-align: center;
+  vertical-align: middle;
   font-size: 20px;
   padding: 15px;
 }
 
 .aboutUs-info input{
-    align-self: center;
-    width: 30%;
-    padding: 10px;
+  align-self: center;
+  width: 30%;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 p.names {
-    text-align: center;
-    vertical-align: middle;
+  text-align: center;
+  vertical-align: middle;
   font-size: 20px;
   padding: 10px;
 }
 
 .aboutUs-FullName {
-    width: 30%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   background-color: #5f9dc9;

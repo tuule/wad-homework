@@ -23,10 +23,19 @@ export default {
 
 <style scoped>
 main {
-  margin-top: 110px;
+  margin-top: 70px;
 }
 
-.about {
-  text-align: center;
+#content {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  min-height: calc(100vh - 70px);
+  margin: auto;
+  background-color: #ffffff;
+}
+
+#content #content-flow {
+  padding: 40px 0 20px 0;
 }
 </style>
