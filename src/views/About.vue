@@ -1,16 +1,24 @@
 <template>
   <main>
-    <div class="about">
-      <h1>This is an about page</h1>
-    </div>
+    <section id="content">
+      <!-- beginning of content -->
+      <div id="content-flow">
+        <AboutUsInfo />
+      </div>
+    </section>
   </main>
-
 </template>
 
 <script>
+
+import AboutUsInfo from "../components/AboutUsInfo";
+
 export default {
-  name: "About"
-}
+  name: "About",
+  components: {
+    AboutUsInfo,
+  }
+};
 </script>
 
 <style scoped>
