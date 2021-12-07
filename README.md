@@ -1,4 +1,4 @@
-# wad-homework
+# WAD-homework
 Web Application Development homework
 
 Lab group 2
@@ -6,31 +6,40 @@ Lab group 2
 Team members: Tuule Tani, Teele Tani, Tanel Tamm
 
 ---
+### Homeworks 1 & 2
+HTML, CSS, JavaScript, jQuery, JSON
 
-### Project setup
-```
+Files can be found in the folder
+`
+hw-1-and-2
+`
+---
+### Homework 3
+Vue & VueX
+
+Files can be found in the folder
+`
+hw-3
+`
+#### Project setup for homework 3
+
+`
+cd hw-3
+`
+
+`
 npm install
-```
+`
 
 #### Compiles and hot-reloads for development
-```
+`
 npm run serve
-```
+`
+---
+### Homework 4
+Node.js, EJS, PostgreSQL
 
-#### Compiles and minifies for production
-```
-npm run build
-```
-
-#### Run your unit tests
-```
-npm run test:unit
-```
-
-#### Lints and fixes files
-```
-npm run lint
-```
-
-#### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Files can be found in the folder
+`
+hw-4
+`
