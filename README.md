@@ -9,37 +9,27 @@ Team members: Tuule Tani, Teele Tani, Tanel Tamm
 ### Homeworks 1 & 2
 HTML, CSS, JavaScript, jQuery, JSON
 
-Files can be found in the folder
-`
-hw-1-and-2
-`
+Files can be found in the folder 
+` hw-1-and-2 `
+
 ---
 ### Homework 3
 Vue & VueX
 
-Files can be found in the folder
-`
-hw-3
-`
+Files can be found in the folder ` hw-3 `
+
 #### Project setup for homework 3
 
-`
-cd hw-3
-`
+` cd hw-3 `
 
-`
-npm install
-`
+` npm install `
 
 #### Compiles and hot-reloads for development
-`
-npm run serve
-`
+` npm run serve `
+
 ---
 ### Homework 4
 Node.js, EJS, PostgreSQL
 
 Files can be found in the folder
-`
-hw-4
-`
+` hw-4 `
