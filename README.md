@@ -33,3 +33,12 @@ Node.js, EJS, PostgreSQL
 
 Files can be found in the folder
 ` hw-4 `
+
+#### Project setup for homework 4
+
+` cd hw-4 `
+
+` npm install `
+
+#### Starts a Node.js server
+` node app ` or `nodemon app`
