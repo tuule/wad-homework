@@ -5,15 +5,13 @@ Lab group 2
 
 Team members: Tuule Tani, Teele Tani, Tanel Tamm
 
----
 ## Homeworks 1 & 2
-####HTML, CSS, JavaScript, jQuery, JSON
+#### HTML, CSS, JavaScript, jQuery, JSON
 
 Project files can be found in the folder ` hw-1-and-2 `.
 
----
 ## Homework 3
-####Vue & VueX
+#### Vue & VueX
 
 Files can be found in the folder ` hw-3 `.
 
@@ -31,7 +29,6 @@ Compile and hot-reload for development:
 
 ` npm run serve `
 
----
 ## Homework 4
 #### Node.js, EJS, PostgreSQL
 
@@ -47,7 +44,7 @@ Install all modules listed as dependencies in `package.json`:
 
 ` npm install `
 
-####Start a Node.js server:
+#### Start a Node.js server:
 
 ` node app `
 
