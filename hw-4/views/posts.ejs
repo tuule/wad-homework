@@ -13,6 +13,37 @@
         <section id="content">
             <!-- beginning of content -->
             <div id="content-flow">
+                <% posts.forEach(post => { %>
+                    <!-- the post contains an image -->
+                    <% if (post.post_image_url !== null) { %>
+                        <!-- beginning of a single post -->
+                        <div class="post">
+                            <div class="post-top">
+                                <img src="<%= post.author_avatar_url %>" alt="avatar">
+                                <p><%= post.post_date %>></p>
+                            </div>
+                            <div class="post-image">
+                                <img src=<%= post.post_image_url %> alt="posted-image">
+                            </div>
+                            <div class="post-comment" v-if="post.post_text !== null">
+                                <p><%= post.post_text %></p>
+                            </div>
+                        </div>
+                        <!-- end of a single post --><!-- the post contains an image -->
+                    <% } else { %> <!-- the post does not contain an image -->
+                        <!-- beginning of a single post -->
+                        <div class="post">
+                            <div class="post-top">
+                                <img src="<%= post.author_avatar_url %>" alt="avatar">
+                                <p><%= post.post_date %>></p>
+                            </div>
+                            <div class="post-comment">
+                                <p><%= post.post_text %></p>
+                            </div>
+                        </div>
+                        <!-- end of a single post -->
+                    <% } %>
+                <% }) %>
             </div>
         </section>
     </main>

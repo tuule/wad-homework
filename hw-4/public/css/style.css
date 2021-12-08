@@ -97,6 +97,45 @@ header #navbar {
     padding: 40px 0 20px 0;
 }
 
+#content-flow .post {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #b5b4b4;
+    margin: 0 auto 20px auto;
+}
+
+.post .post-top {
+    height: 40px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-top img {
+    height: 100%;
+    border-radius: 50%;
+}
+
+img + .post-top p {
+    font-size: 14px;
+}
+
+.post-top ~ .post-comment p {
+    font-size: 18px;
+}
+
+.post .post-image img {
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.post-comment {
+    padding: 0 15px 15px 15px;
+}
+
 #content-flow .contact-us {
     width: 90%;
     display: flex;
