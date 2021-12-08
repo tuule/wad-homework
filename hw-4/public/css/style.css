@@ -132,8 +132,16 @@ img + .post-top p {
     padding-bottom: 15px;
 }
 
-.post-comment {
+.post .post-comment {
     padding: 0 15px 15px 15px;
+}
+
+.post .post-title {
+    padding: 0 15px;
+}
+
+.post-title h3 {
+    font-size: 24px;
 }
 
 #content-flow .contact-us {

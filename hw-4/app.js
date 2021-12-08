@@ -1,6 +1,7 @@
 const express = require('express');
 const pool = require('./database');
 const {render} = require("ejs");
+const functions = require('./public/js/script');
 
 const app = express();
 
@@ -24,9 +25,9 @@ app.get('/', async(req, res) => {
     try {
         console.log("get posts request has arrived");
         const postData = await pool.query(
-            "SELECT * FROM posts"
+            "SELECT * FROM posts ORDER BY post_date DESC"
         );
-        res.render('posts', { posts: postData.rows });
+        res.render('posts', { posts: postData.rows, helper: functions });
     } catch (err) {
         console.error(err.message);
     }
