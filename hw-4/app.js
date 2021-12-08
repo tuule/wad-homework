@@ -1,4 +1,5 @@
 const express = require('express');
+const pool = require('./database');
 const {render} = require("ejs");
 
 const app = express();
@@ -12,18 +13,25 @@ app.listen(3000);
 // use static files
 app.use(express.static('public'))
 
+app.use(express.json());
+
 app.use((req, res, next) => {
     next();
 });
 
 /* app.get() is used to respond to Get requests: */
-app.get('/', (req, res) => {
-    res.render('posts');
+app.get('/', async(req, res) => {
+    try {
+        console.log("get posts request has arrived");
+        const postData = await pool.query(
+            "SELECT * FROM posts"
+        );
+        res.render('posts', { posts: postData.rows });
+    } catch (err) {
+        console.error(err.message);
+    }
 });
 
-app.get('/posts', (req, res) => {
-    res.render('posts');
-});
 
 app.get('/singlepost', (req, res) => {
     res.render('singlepost');
@@ -40,9 +48,3 @@ app.get('/contact', (req, res) => {
 app.use((req, res) => {
     res.status(404).render('404', { message: 'Sorry, this page does not exist.', title: 'Page Not Found'});
 });
-
-// terminalis käsk 'node app' <- ei uuenda automaatselt, pead serveri sulgema ja uuesti käivitama, et muudatusi näha
-// terminalis käsk 'nodemon app' <- uuendab automaatselt
-// nodemon  (https://www.npmjs.com/package/nodemon)  is  a  tool  that  helps  develop  node.js
-// based applications by automatically restarting the node application when file changes in the
-// directory are detected.
