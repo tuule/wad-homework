@@ -1,6 +1,6 @@
 const express = require('express');
 const pool = require('./database');
-const {render} = require("ejs");
+const render = require("ejs");
 const functions = require('./public/js/script');
 
 const app = express();
@@ -38,10 +38,17 @@ app.get('/posts/:id', async(req, res) => {
     try {
         console.log("get a single post request has arrived");
         const { id } = req.params;
+        console.log(req.params);
         const postData = await pool.query(
             "SELECT * FROM posts WHERE post_id = $1", [id]
         );
-        res.render('singlepost', { post: postData.rows[0], helper: functions });
+        console.log(postData.rows[0])
+        if (postData.rows.length > 0) {
+            res.render('singlepost', { post: postData.rows[0], helper: functions });
+        }
+        else {
+            res.redirect('/404');
+        }
     } catch (err) {
         console.error(err.message);
     }
@@ -70,5 +77,5 @@ app.get('/contact', (req, res) => {
 });
 
 app.use((req, res) => {
-    res.status(404).render('404', { message: 'Sorry, this page does not exist.', title: 'Page Not Found'});
+    res.status(404).render('404', { message: 'Uh-oh! The page you were looking for does not exist.', title: 'Page Not Found'});
 });
