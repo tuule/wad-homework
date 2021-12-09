@@ -153,6 +153,44 @@ img + .post-top p {
     text-align: center;
 }
 
+.no-posts img {
+    width: 100%;
+    padding: 10px;
+}
+
+.no-posts ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.no-posts ul li {
+    margin: 10px 15px;
+}
+
+.no-posts li a {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0c508d;
+    text-decoration: none;
+    background: transparent;
+    border: 1px solid #3597ef;
+    border-radius: 16px;
+    cursor: pointer;
+    padding: 8px 24px;
+}
+
+.no-posts li a:hover {
+    color: #ffffff;
+    border-color: #0c508d;
+    background-color: #0c508d;
+}
+
 .post .like-button {
     display: flex;
     flex-direction: row;
