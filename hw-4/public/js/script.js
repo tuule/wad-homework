@@ -5,6 +5,11 @@ function formatDate(date) {
     return newDate;
 }
 
+function makeActive(button) {
+    button.target.className = 'active';
+}
+
 module.exports = {
-    formatDate: formatDate
+    formatDate: formatDate,
+    makeActive: makeActive
 }
