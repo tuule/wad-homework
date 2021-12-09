@@ -144,6 +144,77 @@ img + .post-top p {
     font-size: 24px;
 }
 
+.post .no-posts {
+    padding: 15px;
+}
+
+.no-posts h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.post .like-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+.like-button > button {
+    background-image: url("../img/like-btn.png");
+    background-color: #0c508d;
+    background-repeat: no-repeat;
+    background-position: 8px 7px;
+    background-size: 25px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+}
+
+.like-button > button:hover {
+    background-color: #03325c;
+}
+
+.numberOfLikes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #1285ec;
+    border: none;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin-left: 7px;
+}
+
+#content-flow .add-post {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #b5b4b4;
+    margin: 0 auto 20px auto;
+}
+
+.add-post .add-post-text {
+    padding: 15px;
+}
+
+.add-post-text h1 {
+    font-size: 26px;
+}
+
+.add-post-text p {
+    font-size: 20px;
+}
+
 #content-flow .contact-us {
     width: 90%;
     display: flex;
@@ -170,7 +241,7 @@ hr {
     border: 1px solid #b1a7a6;
 }
 
-.contact-us form {
+form {
     padding: 15px;
 }
 

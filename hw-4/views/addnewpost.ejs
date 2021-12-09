@@ -13,6 +13,30 @@
         <section id="content">
             <!-- beginning of content -->
             <div id="content-flow">
+                <div class="add-post">
+                    <div class="add-post-text">
+                        <h1>Add a new post</h1>
+                        <hr>
+                        <p>Here you can add a new post.</p>
+                    </div>
+                    <form action="/posts" method="POST">
+                        <div class="form-item">
+                            <label for="post_title">Post title</label>
+                            <input type="text" id="post_title" name="post_title"/>
+                        </div>
+                        <div class="form-item">
+                            <label for="post_text">Post text</label>
+                            <textarea rows="7" id="post_text" name="post_text"></textarea>
+                        </div>
+                        <div class="form-item">
+                            <label for="post_image_url">Image url</label>
+                            <input type="text" id="post_image_url" name="post_image_url"/>
+                        </div>
+                        <div class="actions">
+                            <button type="submit" name="submit">Add post</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
     </main>

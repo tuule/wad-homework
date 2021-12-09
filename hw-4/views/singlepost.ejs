@@ -13,6 +13,31 @@
         <section id="content">
             <!-- beginning of content -->
             <div id="content-flow">
+                    <div class="post">
+                        <div class="post-top">
+                            <img src="<%= post.author_avatar_url %>" alt="avatar">
+                            <p><%= helper.formatDate(post.post_date) %></p>
+                        </div>
+                        <% if (post.post_image_url !== null) { %>
+                            <div class="post-image">
+                                <img src=<%= post.post_image_url %> alt="posted-image">
+                            </div>
+                        <% } %>
+                        <% if (post.post_title !== null) { %>
+                            <div class="post-title">
+                                <h3><%= post.post_title %></h3>
+                            </div>
+                        <% } %>
+                        <% if (post.post_text !== null) { %>
+                            <div class="post-comment">
+                                <p><%= post.post_text %></p>
+                            </div>
+                        <% } %>
+                        <div class="like-button">
+                            <button type="button" name="thumbs-up"></button>
+                            <div class="numberOfLikes"><%= post.number_of_likes %></div>
+                        </div>
+                    </div>
             </div>
         </section>
     </main>
