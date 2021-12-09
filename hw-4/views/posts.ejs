@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="../img/snow.ico">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Posts</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
             <div id="content-flow">
                 <% if (posts.length > 0) { %>
                     <% posts.forEach(post => { %>
-                        <div class="post">
+                        <div class="post" onclick="location.href='/posts/<%= post.post_id %>'" style="cursor: pointer">
                             <div class="post-top">
                                 <img src="<%= post.author_avatar_url %>" alt="avatar">
                                 <p><%= helper.formatDate(post.post_date) %></p>
@@ -35,6 +36,8 @@
                                     <p><%= post.post_text %></p>
                                 </div>
                             <% } %>
+                        </div>
+                        <div class="button-container">
                             <div class="like-button">
                                 <button type="button" name="thumbs-up"></button>
                                 <div class="numberOfLikes"><%= post.number_of_likes %></div>

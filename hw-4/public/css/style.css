@@ -102,9 +102,12 @@ header #navbar {
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #b5b4b4;
-    margin: 0 auto 20px auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-left: 1px solid #e9ecef;
+    border-top: 1px solid #e9ecef;
+    border-right: 1px solid #e9ecef;
+    margin: 0 auto;
 }
 
 .post .post-top {
@@ -191,7 +194,72 @@ img + .post-top p {
     background-color: #0c508d;
 }
 
-.post .like-button {
+#content-flow .special-buttons {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.special-buttons ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 2;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.special-buttons ul li {
+    margin-top: 15px;
+}
+
+.special-buttons li a {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0c508d;
+    text-decoration: none;
+    background: transparent;
+    border: 1px solid #3597ef;
+    border-radius: 16px;
+    cursor: pointer;
+    padding: 8px 24px;
+}
+
+.special-buttons li a.delete {
+    border: 1px solid #f7a399;
+}
+
+.special-buttons li a:hover {
+    color: #ffffff;
+    border-color: #0c508d;
+    background-color: #0c508d;
+}
+
+.special-buttons li a.delete:hover {
+    color: #ffffff;
+    border-color: #e63946;
+    background-color: #e63946;
+}
+
+#content-flow .button-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: 1px solid #e9ecef;
+    border-bottom: 1px solid #e9ecef;
+    border-right: 1px solid #e9ecef;
+    margin: 0 auto 20px auto;
+}
+
+.button-container .like-button {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -237,7 +305,7 @@ img + .post-top p {
     flex-direction: column;
     background-color: #ffffff;
     border-radius: 5px;
-    box-shadow: 0 0 10px #b5b4b4;
+    border: 1px solid #dee2e6;
     margin: 0 auto 20px auto;
 }
 
@@ -259,7 +327,7 @@ img + .post-top p {
     flex-direction: column;
     background-color: #ffffff;
     border-radius: 5px;
-    box-shadow: 0 0 10px #b5b4b4;
+    border: 1px solid #dee2e6;
     margin: 0 auto 20px auto;
 }
 
@@ -330,7 +398,7 @@ form .form-item {
     flex-direction: column;
     background-color: #ffffff;
     border-radius: 5px;
-    box-shadow: 0 0 10px #b5b4b4;
+    border: 1px solid #dee2e6;
     margin: 0 auto 20px auto;
 }
 

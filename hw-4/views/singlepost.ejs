@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="../img/snow.ico">
     <link rel="stylesheet" href="../css/style.css">
     <title>Single Post</title>
 </head>
@@ -13,34 +14,55 @@
         <section id="content">
             <!-- beginning of content -->
             <div id="content-flow">
-                    <div class="post">
-                        <div class="post-top">
-                            <img src="<%= post.author_avatar_url %>" alt="avatar">
-                            <p><%= helper.formatDate(post.post_date) %></p>
-                        </div>
-                        <% if (post.post_image_url !== null) { %>
-                            <div class="post-image">
-                                <img src=<%= post.post_image_url %> alt="posted-image">
-                            </div>
-                        <% } %>
-                        <% if (post.post_title !== null) { %>
-                            <div class="post-title">
-                                <h3><%= post.post_title %></h3>
-                            </div>
-                        <% } %>
-                        <% if (post.post_text !== null) { %>
-                            <div class="post-comment">
-                                <p><%= post.post_text %></p>
-                            </div>
-                        <% } %>
-                        <div class="like-button">
-                            <button type="button" name="thumbs-up"></button>
-                            <div class="numberOfLikes"><%= post.number_of_likes %></div>
-                        </div>
+                <div class="post">
+                    <div class="post-top">
+                        <img src="<%= post.author_avatar_url %>" alt="avatar">
+                        <p><%= helper.formatDate(post.post_date) %></p>
                     </div>
+                    <% if (post.post_image_url !== null) { %>
+                        <div class="post-image">
+                            <img src=<%= post.post_image_url %> alt="posted-image">
+                        </div>
+                    <% } %>
+                    <% if (post.post_title !== null) { %>
+                        <div class="post-title">
+                            <h3><%= post.post_title %></h3>
+                        </div>
+                    <% } %>
+                    <% if (post.post_text !== null) { %>
+                        <div class="post-comment">
+                            <p><%= post.post_text %></p>
+                        </div>
+                    <% } %>
+                </div>
+                <div class="button-container">
+                    <div class="like-button">
+                        <button type="button" name="thumbs-up"></button>
+                        <div class="numberOfLikes"><%= post.number_of_likes %></div>
+                    </div>
+                </div>
+                <div class="special-buttons">
+                    <ul>
+                        <li>
+                            <a href="/">Return to homepage</a>
+                        </li>
+                        <li>
+                            <a class="delete" data-idofpost="<%= post.post_id %>">Delete this post</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
+    <script>
+        const delreq = document.querySelector('a.delete');
+        delreq.addEventListener('click', (e) => {
+            const endpoint = `/posts/${delreq.dataset.idofpost}`;
+            fetch(endpoint, {
+                method: 'DELETE'
+            }).then(response => window.location.href = '/')
+        });
+    </script>
     <%- include('./partials/footer.ejs') %>
 </body>
 </html>
