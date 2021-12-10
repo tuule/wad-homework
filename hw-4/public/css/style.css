@@ -147,7 +147,17 @@ img + .post-top p {
     font-size: 24px;
 }
 
-.post .no-posts {
+#content-flow .error {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #e9ecef;
+    margin: 0 auto;
+}
+
+.error .no-posts {
     padding: 15px;
 }
 
@@ -270,7 +280,7 @@ img + .post-top p {
 
 .like-button > button {
     background-image: url("../img/like-btn.png");
-    background-color: #0c508d;
+    background-color: #dee2e6;
     background-repeat: no-repeat;
     background-position: 8px 7px;
     background-size: 25px;
@@ -282,6 +292,10 @@ img + .post-top p {
 }
 
 .like-button > button:hover {
+    background-color: #03325c;
+}
+
+.like-button > button.active {
     background-color: #03325c;
 }
 
