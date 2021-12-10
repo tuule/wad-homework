@@ -68,10 +68,22 @@ app.post('/add', async(req, res) => {
         const post = req.body;
         console.log("Post request to \'/add\'");
         console.log(post);
+
+        if (post.post_title === "") {
+            post.post_title = null;
+        }
+        if (post.post_text === "") {
+            post.post_text = null;
+        }
+        if (post.post_image_url === "") {
+            post.post_image_url = null;
+        }
+        console.log(post);
+
         const newpost = await pool.query(
-            "INSERT INTO posts(post_date, post_title, post_text, post_image_url, number_of_likes, author_avatar_url, has_been_liked) values (CURRENT_TIMESTAMP, $1, $2, $3, 0, 'https://kodu.ut.ee/~a71486/user-3.png', false) RETURNING *",
-            [post.post_title, post.post_text, post.post_image_url]
-    );
+                "INSERT INTO posts(post_date, post_title, post_text, post_image_url, number_of_likes, author_avatar_url, has_been_liked) values (CURRENT_TIMESTAMP, $1, $2, $3, 0, 'https://kodu.ut.ee/~a71486/user-3.png', false) RETURNING *",
+                [post.post_title, post.post_text, post.post_image_url]
+        );
         console.log("After post request redirect to \'/\'");
         res.redirect('/');
     } catch (err) {
@@ -82,11 +94,25 @@ app.post('/add', async(req, res) => {
 app.delete('/posts/:id', async(req, res) => {
     try {
         const id = req.params.id;
-        console.log("Delete request to \'/posts/" + id + "\'");
+        console.log("Delete request for \'/posts/" + id + "\'");
         const deletepost = await pool.query(
             "DELETE FROM posts WHERE post_id = $1", [id]
         );
         console.log("After delete request redirect to \'/\'");
+        res.redirect('/');
+    } catch (err) {
+        console.error(err.message);
+    }
+});
+
+app.put('/posts/:id', async(req, res) => {
+    try {
+        const id = req.params.id;
+        console.log("Update request for \'/posts/" + id + "\'");
+        const updatepost = await pool.query(
+            "UPDATE posts SET number_of_likes = number_of_likes + 1, has_been_liked = true WHERE post_id = $1", [id]
+    );
+        console.log("After update request redirect to \'/\'");
         res.redirect('/');
     } catch (err) {
         console.error(err.message);

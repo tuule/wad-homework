@@ -37,8 +37,12 @@
                 </div>
                 <div class="button-container">
                     <div class="like-button">
-                        <button type="button" name="thumbs-up"></button>
-                        <div class="numberOfLikes"><%= post.number_of_likes %></div>
+                        <% if (!post.has_been_liked) { %>
+                            <button type="button" name="thumbs-up" class="addLike" data-idofpost="<%= post.post_id %>"></button>
+                        <% } else { %>
+                            <button type="button" name="thumbs-up" class="active"></button>
+                        <% } %>
+                        <div class="numberOfLikes" class="delete" ><%= post.number_of_likes %></div>
                     </div>
                 </div>
                 <div class="special-buttons">
@@ -60,6 +64,14 @@
             const endpoint = `/posts/${delreq.dataset.idofpost}`;
             fetch(endpoint, {
                 method: 'DELETE'
+            }).then(response => window.location.href = '/')
+        });
+
+        const updatereq = document.querySelector('button.addLike');
+        updatereq.addEventListener('click', (e) => {
+            const endpoint = `/posts/${updatereq.dataset.idofpost}`;
+            fetch(endpoint, {
+                method: 'PUT'
             }).then(response => window.location.href = '/')
         });
     </script>
