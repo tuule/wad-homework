@@ -42,7 +42,7 @@ app.get('/posts', (req, res) => {
 app.get('/posts/:id', async(req, res) => {
     try {
         const id = req.params.id; // or you could write it like this -> const { id } = req.params;
-        console.log("Get request to \'/posts/id/" + id + "\'");
+        console.log("Get request to \'/posts/" + id + "\'");
         const postData = await pool.query(
             "SELECT * FROM posts WHERE post_id = $1", [id]
         );
@@ -105,10 +105,10 @@ app.delete('/posts/:id', async(req, res) => {
     }
 });
 
-app.put('/posts/:id', async(req, res) => {
+app.put('/:id', async(req, res) => {
     try {
         const id = req.params.id;
-        console.log("Update request for \'/posts/" + id + "\'");
+        console.log("Update request for \'/" + id + "\'");
         const updatepost = await pool.query(
             "UPDATE posts SET number_of_likes = number_of_likes + 1, has_been_liked = true WHERE post_id = $1", [id]
     );

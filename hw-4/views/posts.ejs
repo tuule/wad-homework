@@ -63,7 +63,7 @@
     <script>
         const updatereq = document.querySelector('button.addLike');
         updatereq.addEventListener('click', (e) => {
-            const endpoint = `/posts/${updatereq.dataset.idofpost}`;
+            const endpoint = `/${updatereq.dataset.idofpost}`;
             fetch(endpoint, {
                 method: 'PUT'
             }).then(response => window.location.href = '/')
