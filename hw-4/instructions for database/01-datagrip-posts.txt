@@ -1,0 +1,21 @@
+create sequence posts_test_seq;
+
+alter sequence posts_test_seq owner to postgres;
+
+create table posts_test
+(
+    post_id           integer default nextval('posts_seq'::regclass) not null
+        primary key,
+    author_avatar_url varchar                                        not null,
+    post_date         timestamp                                      not null,
+    post_title        varchar,
+    post_text         varchar,
+    post_image_url    varchar,
+    number_of_likes   integer                                        not null,
+    has_been_liked    boolean                                        not null
+);
+
+alter sequence posts_test_seq owned by posts_test.post_id;
+
+alter table posts
+    owner to postgres;

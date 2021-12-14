@@ -1,0 +1,29 @@
+CREATE SEQUENCE IF NOT EXISTS public.posts_seq
+
+ALTER SEQUENCE public.posts_seq
+    OWNER TO postgres;
+
+CREATE TABLE IF NOT EXISTS public.posts
+(
+    post_id integer NOT NULL DEFAULT nextval('posts_seq'::regclass),
+    author_avatar_url character varying COLLATE pg_catalog."default" NOT NULL,
+    post_date timestamp without time zone NOT NULL,
+    post_title character varying COLLATE pg_catalog."default",
+    post_text character varying COLLATE pg_catalog."default",
+    post_image_url character varying COLLATE pg_catalog."default",
+    number_of_likes integer NOT NULL,
+    has_been_liked boolean NOT NULL,
+    CONSTRAINT posts_pkey PRIMARY KEY (post_id)
+)
+
+ALTER SEQUENCE public.posts_seq
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+    MAXVALUE 9223372036854775807
+    CACHE 1
+    OWNED BY posts.post_id;
+
+
+ALTER TABLE IF EXISTS public.posts
+    OWNER to postgres;
